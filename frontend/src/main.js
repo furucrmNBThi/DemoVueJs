@@ -46,4 +46,5 @@ Vue.axios.interceptors.request.use(
 new Vue({
   render: h => h(App),
   router,
-}).$mount('#app')
+  store
+}).$mount("#app");

@@ -20,7 +20,7 @@ export default {
   actions: {
     auth_sign_in({ commit }, { username, password }) {
         console.log('username: ' + username);
-        const user = this.$store.dispatch('axios_post', {url: '', data: { username: username, password: password }});
+        const user = this.dispatch('axios_post', {url: '', data: { username: username, password: password }});
         if(user != undefined && user != null){
             commit(LOGIN_SUCCESS, user);
         }else{

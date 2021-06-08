@@ -2,14 +2,14 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 import authModule from "./modules/auth";
-import axios from "./modules/axios";
+import axiosModule from "./modules/axios";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {},
   modules: {
-    axios: axios,
+    axios: axiosModule,
     auth: authModule
   },
   getters: {}
